@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Justin Sorongon - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Personal portfolio of Justin Sorongon - projects, skills, and contact.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Justin Reyz L. Sorongon
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Justin</span>.</h1>
+          <p class="lead">A computer science student in the Polytechnic State University of Bicol</p>
+          <p class="meta">Currently unavailable for class projects and portfolio submissions.</p>
+          <p><a class="btn" href="projects.html">See my projects</a></p>
+        </div>
+        <figure class="hero-image" aria-hidden="true">
+          <img src="images/image2.png" alt="Portrait placeholder">
+        </figure>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <h2>About Me</h2>
+      <p>I am a student focused on efficient, time-saving solutions. I appreciate compact, semantic HTML and responsive CSS. <br>This portfolio fulfills the CCCS 101 final project requirements.</p>
+      <ul class="skills-list">
+        <li>HTML5 &amp; Semantic Structure</li>
+        <li>Responsive Layout (Flexbox &amp; Grid)</li>
+        <li>External CSS &amp; Media Queries</li>
+      </ul>
+    </section>
+
+    <section class="highlights container">
+      <h2>Featured Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/code.png" alt="Project thumbnail">
+          <div class="card-body">
+            <h3>Portfolio Project</h3>
+            <p>Small website built with pure HTML/CSS for the final project.</p>
+            <p class="muted">Skills: HTML, CSS, Layout</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/website.png" alt="Project thumbnail">
+          <div class="card-body">
+            <h3>High School Project</h3>
+            <p>A small developed website for practice.</p>
+            <p class="muted">Skills: HTML, CCS</p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/ai.png" alt="Project thumbnail">
+          <div class="card-body">
+            <h3>Project STTTS</h3>
+            <p>A Speech to Text to Speech program designed for VTubers.</p>
+            <p class="muted">Skills: Python, AI, Cuda, Code Quality</p>
+          </div>
+        </article>
+      </div>
+      <p class="center"><a class="btn-outline" href="projects.html">View full portfolio</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Justin Sorongon - Portfolio for CCCS 101</p>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Credits</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.querySelector('.main-nav');
+      btn.addEventListener('click', ()=>{
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
