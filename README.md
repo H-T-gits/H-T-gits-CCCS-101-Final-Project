@@ -59,7 +59,3 @@ The project is structured with the following files (based on the provided contex
 
   * **Student:** BS Computer Science - Camarines Sur Polytechnic Colleges
   * **Portfolio Course:** CCCS 101
-
-## 📜 License
-
-This project is created for educational purposes as a final project for CCCS 101. No specific license is provided in the source files.
